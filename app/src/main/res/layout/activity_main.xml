@@ -8,14 +8,23 @@
 
     <ImageView
         android:id="@+id/memeImageView"
-        android:layout_width="641dp"
-        android:layout_height="289dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/guideline2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/memeImageView"
+        app:layout_constraintLeft_toLeftOf="@id/memeImageView"
+        app:layout_constraintRight_toRightOf="@id/memeImageView"
+        app:layout_constraintTop_toTopOf="@id/memeImageView" />
 
 
     <Button
@@ -26,12 +35,13 @@
         android:onClick="shareMeme"
         android:text="@string/share"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintTop_toTopOf="@id/guideline4"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/guideline5"/>
+        app:layout_constraintTop_toTopOf="@id/guideline4"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/NextButton"
@@ -40,12 +50,13 @@
         android:onClick="nextMeme"
         android:text="@string/next"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/guideline4"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintTop_toTopOf="@id/guideline2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/guideline4"/>
+        app:layout_constraintTop_toTopOf="@id/guideline2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UsingOnClickInXml" />
 
 
 
@@ -70,6 +81,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent=".99" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
