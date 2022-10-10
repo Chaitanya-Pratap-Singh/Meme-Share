@@ -5,6 +5,8 @@ Memes are a cultural shorthand that, like all forms of communication, evolve wit
 And with each passing day they are becoming a vital part of our life.
 This app lets to view awesome memes from [Reddit](https://www.reddit.com/)
 
+
+  ![MEME-SHARE](https://user-images.githubusercontent.com/85861632/194892114-0287c478-a0ba-4e6f-acfe-e567f6035c95.png)
  
 ## Authors
 
@@ -15,4 +17,3 @@ This app lets to view awesome memes from [Reddit](https://www.reddit.com/)
 [Meme-API](https://meme-api.herokuapp.com/gimme)
  The API hosted on [heroku](https://www.heroku.com/) which enalbed me to make [this app](https://github.com/Chaitanya-Pratap-Singh/Meme-Share)
 
-  
